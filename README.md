@@ -1,0 +1,1 @@
+# mapacopadomundo2026
