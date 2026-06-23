@@ -88,7 +88,40 @@ button { cursor:pointer; background:#13233a; } button:hover { border-color:var(-
 .match-detail-popup .detail-row { margin:4px 0; color:#111827; line-height:1.25; }
 .match-detail-popup .detail-meta { color:#374151; font-size:12px; line-height:1.25; }
 @media (max-width: 520px) { .leaflet-popup-content { min-width:230px; max-width:calc(100vw - 64px); } .match-detail-popup { min-width:230px; } .match-detail-popup .detail-score-row { gap:6px; } .match-detail-popup .detail-result { font-size:12px; padding:3px 7px; } } .popup .match-popup-row { white-space:nowrap; } .leaflet-popup-content { width:auto!important; }
-@media (min-width: 901px) { .app { grid-template-columns:320px 1fr; grid-template-rows:100vh; } .sidebar { height:100vh; border-bottom:0; border-right:1px solid var(--line); overflow:hidden; } #map { height:100vh; } .controls { grid-template-columns:1fr 1fr; gap:4px 6px; } .filter-col { grid-auto-rows:24px; gap:4px; } #list { display:none; } .stats { margin-top:6px; height:30px; min-height:30px; } }
+@media (min-width: 901px) {
+  .app { grid-template-columns:320px 1fr; grid-template-rows:100vh; }
+  .sidebar { height:100vh; border-bottom:0; border-right:1px solid var(--line); overflow:hidden; }
+  #map { height:100vh; }
+  .controls { grid-template-columns:1fr 1fr; gap:4px 6px; }
+  .filter-col { grid-auto-rows:24px; gap:4px; }
+  #list { display:none; }
+  .stats { margin-top:6px; height:30px; min-height:30px; }
+  input,
+  select,
+  button,
+  .button-link {
+    font-size: 13.75px;
+  }
+
+  input,
+  select,
+  button,
+  .button-link,
+  .filter-col > input,
+  .filter-col > select,
+  .filter-col > button,
+  .filter-col > .button-link,
+  .filter-col > .select-with-icon,
+  .select-with-icon select {
+    height: 30px;
+    min-height: 30px;
+  }
+
+  .filter-col {
+    grid-auto-rows: 30px;
+    gap: 5px;
+  }
+}
 @media (max-height: 820px) { #list { display:none; } .stats { margin-top:3px; } }
 @media (max-width: 900px) { .app { grid-template-rows:36vh 64vh; } #map { height:64vh; } .controls { grid-template-columns:1fr 1fr; } #list { display:none; } }
 </style>
