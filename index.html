@@ -121,6 +121,32 @@ button { cursor:pointer; background:#13233a; } button:hover { border-color:var(-
     grid-auto-rows: 30px;
     gap: 5px;
   }
+       .stats {
+    height: 37.5px;
+    min-height: 37.5px;
+    gap: 5px;
+    margin-top: 7.5px;
+  }
+
+  .stat {
+    border-radius: 10px;
+    padding: 4px 5px;
+    gap: 4px;
+  }
+
+  .stat-icon {
+    width: 15px;
+    height: 15px;
+    flex-basis: 15px;
+  }
+
+  .stat b {
+    font-size: 13.75px;
+  }
+
+  .stat span {
+    font-size: 10px;
+  }
 }
 @media (max-height: 820px) { #list { display:none; } .stats { margin-top:3px; } }
 @media (max-width: 900px) { .app { grid-template-rows:36vh 64vh; } #map { height:64vh; } .controls { grid-template-columns:1fr 1fr; } #list { display:none; } }
